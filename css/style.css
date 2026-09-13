@@ -2,3 +2,36 @@ body {
     background-color: #f4f4f9;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Weekly Task Goals form */
+
+#weekly-tasks {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#weekly-tasks h2 {
+    margin-bottom: 20px;
+}
+
+#goal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+#goal-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#goal-btn {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#goal-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
