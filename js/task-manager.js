@@ -28,4 +28,7 @@ document.getElementById("goal-btn").addEventListener("click", function(event) {
 
     // Call the weeklyGoal function.
     weeklyGoal(userName, dailyGoal, bonusTasks);
+   
+    // convert to numeric value
+let input_value = parseFloat(input_value)
 });
