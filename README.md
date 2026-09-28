@@ -29,3 +29,6 @@ if "inches"
     "output: centimeters"
 ```
 The Weekly Task Goals feature calculates a user's weekly task target based on their daily task goal and additional weekly bonus tasks. The user enters their name, daily goal, and bonus tasks, and the JavaScript function calculates the total weekly goal using five workdays.
+
+## Magic Eight Ball
+This game is a magic ball guessing game where you can ask yes or no questions and get answers.
