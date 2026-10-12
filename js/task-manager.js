@@ -31,4 +31,23 @@ document.getElementById("goal-btn").addEventListener("click", function(event) {
    
     // convert to numeric value
 let input_value = parseFloat(input_value)
+}
+document.createElement("ul") 
+let myTasks = [];
+
+let userTasks = document.createElement("ul");
+userTasks.id = "user-tasks";
+document.getElementById("task-list").appendChild(userTasks);
+
+document.getElementById("add-task-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    let taskInput = document.getElementById("task-input").value;
+    myTasks.push(taskInput);
+
+    let listItem = document.createElement("li");
+    listItem.textContent = taskInput;
+    userTasks.appendChild(listItem);
 });
+
+);
