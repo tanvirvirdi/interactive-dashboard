@@ -5,17 +5,19 @@
 }
 
 #circle {
-  font-size: 12pt;
-  background-color: white;
-  color: black;
-  position: absolute;
-  margin-left: 70px;
-  margin-top: 70px;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  text-wrap: wrap;
-  display: none;
+    font-size: 12pt;
+    background-color: white;
+    color: black;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 70px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-wrap: wrap;
+    display: none;
+    z-index: 100;
+    text-align: center;
 }
 
 
