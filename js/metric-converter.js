@@ -1,4 +1,4 @@
-var inches;
+/* var inches;
 var centimeters;
 
 inches = prompt("Enter inches:");
@@ -10,4 +10,4 @@ if (inches) {
     alert("output: " + centimeters);
 }
 //Convert to numeric value 
-let input_value = parseFloat (input_value)
+let input_value = parseFloat (input_value) */

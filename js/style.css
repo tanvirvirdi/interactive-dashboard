@@ -29,7 +29,8 @@ h2 {
 }
  
 #goal-form,
-#converter-form {
+#converter-form,
+#enter-task {
     display: flex;
     flex-direction: column;
     gap: 10px;

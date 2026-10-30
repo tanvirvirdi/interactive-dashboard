@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Dashboard</title>
+ 
+    <!-- Bootstrap (loaded FIRST so your CSS can override it) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ 
+    <!-- Your stylesheet (loaded AFTER Bootstrap) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magic-eight-ball.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+ 
+<body>
+ 
+    <h1>My Interactive Dashboard</h1>
+ 
+    <p>This dashboard was created by Tanvir Virdi for the WEB-115 course at Wake Tech.</p>
+ 
+    <script>
+        document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.");
+        var x = document.getElementById ("tanvir-virdi");
+    </script>
+ 
+    <!-- The <noscript> is for web browsers with JavaScript disabled. -->
+    <noscript>
+        Unfortunately, your web browser does not support JavaScript.
+    </noscript>
+ 
+    <div class="container">
+        <div class="row">
+ 
+            <!-- Weekly Task Goals -->
+            <div class="col" id="weekly-tasks">
+                <div id="task-list">
+                    <h3>Weekly Tasks List</h3>
+                    <p>Enter a task below to manage your goals</p>
+                    <form id="enter-task">
+                        <label for="task-name">Enter Task</label>
+                        <input type="text" id="task-name"/>
+                        <button id="add-task-btn" type="submit">Add Task</button>
+                        
+                        <label for="priority-level">Task Manager:</label>
+                        <select id="priority-level" required>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                        <input type="checkbox" id="task-important" name="Importance" value="High"> 
+                        <label for="task-important">Important</label>
+                    </form>
+
+                    <button id="delete-list" type="submit">Delete List</button>
+                </div>
+                
+                <h2><strong>Weekly Task Goals:</strong></h2>
+ 
+                <form id="goal-form">
+                    <label for="user-name">Name:</label>
+                    <input type="text" id="user-name" required>
+ 
+                    <label for="daily-goal">Daily Task Goal:</label>
+                    <input type="number" id="daily-goal" required>
+ 
+                    <label for="bonus-tasks">Weekly Bonus Tasks:</label>
+                    <input type="number" id="bonus-tasks" required>
+ 
+                    <button id="goal-btn" type="submit">Calculate Goal</button>
+                </form>
+ 
+                <p id="goal-message"></p>
+            </div>
+ 
+            <!-- Metric Converter -->
+            <div class="col" id="metric-converter">
+                <h2><strong>Metric Converter:</strong></h2>
+                <form id="converter-form">
+                    <label for="input-value">Enter a value:</label>
+                    <input type="number" id="input-value" required>
+ 
+                    <label for="from-unit">From Unit:</label>
+                    <select id="from-unit" required>
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="centimeters">Centimeters</option>
+                    </select>
+ 
+                    <label for="to-unit">To Unit:</label>
+                    <select id="to-unit" required>
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="centimeters">Centimeters</option>
+                    </select>
+ 
+                    <button id="convert-btn" type="submit">Convert</button>
+                </form>
+ 
+                <p id="converter-result"></p>
+                <div id="tanvir-virdi"></div>
+            </div>
+
+            <!-- Magic Eight Ball -->
+            <div class="col" id="magic-eight-ball">
+                <script src="js/magic-eight-ball.js" defer></script>
+                <link rel="stylesheet" href="css/magic-eight-ball.css">
+                <h2 class="heading">Magic Eight Ball</h2>
+                <form>
+                    <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
+                    <input id="question" name="question" size="80">
+                    <div id="magicEightball">
+                        <div id="circle"></div>
+                        <img id="ball" src="img/magic-eight-ball.png" alt="Magic Eight Ball">
+                    </div>
+                    <button id="reset" name="reset" type="reset">Ask another question</button>
+                </form>
+                <br>
+            </div>
+
+        </div>
+    </div>
+ 
+    <!-- Scripts at the end so the elements above exist before the JS runs -->
+    <script src="js/task-manager.js"></script>
+    <script src="js/metric-converter.js"></script>
+ 
+</body>
+</html>
